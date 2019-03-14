@@ -3,16 +3,11 @@ html, body {
   overflow: hidden;
   margin: 0;
 }
-.container, nav, .table-container {
+.container, nav {
   /*display: flex;*/ /* or inline-flex */
   height: 100%;
   width: 100%;
 }
-
-.table-container {
-  position: relative;
-  min-height: 150px;
-} 
 
 .align-bottom {
   position: absolute;
@@ -35,6 +30,7 @@ ul {
 li {
   text-align: center;
   position: relative;
+  height: 5em;
 }
 
 .col-md-6, .col-lg-4 {
@@ -61,4 +57,10 @@ a:-webkit-any-link {
     color: inherit;
     cursor: pointer;
     text-decoration: none;
+}
+
+li.vertical-center a {
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
