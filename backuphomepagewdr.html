@@ -1,0 +1,196 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+<style>
+.template-page .entry-content-wrapper h2 {
+    text-transform: none;
+}
+
+.container {
+width: 100%;
+}
+
+#home-top h4, #home-top h5, #home-top h6 {
+font-size: 14px;
+font-weight: normal;
+} 
+
+.responsive .container {
+max-width: 100%; 
+padding: 0px 0px;
+}
+
+.align-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ 
+}
+
+.row {
+  margin-left: 0; 
+  margin-right: 0; 
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-block-end: 0;
+}
+
+li.home {
+  text-align: center;
+  position: relative;
+  height: 8em; 
+/*  if changing height, also adjust li.vertical-center margin*/
+}
+
+.col-md-6, .col-lg-4 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid black;
+    border-right: none;
+    border-bottom: none;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li.vertical-center a {
+    display: inline-block;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+}
+
+.home-header {
+  padding-left: 2em;
+}
+
+#home-bottom {
+  height:145px;
+}
+
+sup {
+  font-size: inherit;
+}
+
+.zero-margin-block {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#home-about {
+  margin-left: 2em;
+}
+
+.padding-right {
+  padding-right: 10em;
+}
+
+.wide-spacing {
+  letter-spacing: 4px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+#home-bottom ul li:hover, #home-bottom ul li a:hover  {
+ background-color: #969696;
+ color:white;
+}
+
+.entry-content-wrapper ul {
+    list-style: none;
+}
+
+.entry-content-wrapper li {
+    margin-left: 0em;
+}
+
+#home-bottom ul.row {
+margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .padding-right {
+    padding-right: 0em;
+  }
+
+  #home-about {
+    margin-left: 0em;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  #home-top-info {
+  padding-bottom: 20em;
+  }
+
+.col-md-6, .col-lg-4 {
+    webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+</style>
+	<div id="home-top">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 first-sm first-xs">
+				<img src="http://wdrg.local/wp-content/uploads/2019/04/WDR_logo_MInk_TransparentBG.png" class="home-header" style="width:200px">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 end-md end-lg" style="padding-right:5em">
+				<img src="http://wdrg.local/wp-content/uploads/2019/04/WDRG_LogoHeader_1440.png">
+		</div>
+
+		<div id ="home-top-info" class="row between-md between-lg between-sm around-xs bottom-md bottom-lg bottom-sm bottom-xs">
+			<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 second-sm second-xs" id="home-about" >
+				<h4 style="font-weight:bold">36 Waverly Avenue Brooklyn, NY 11205</h4>
+				<h5 style="margin: 1em 0 1em 0">+gallery is on the fourth floor of a walkup. If you need assistance to get up to the gallery please email or text me for the freight elevator.</h5>
+				<h4 class="zero-margin-block" style="color:#969696"><a href="tel:917-721-7094">917-721-7094</a></h4>
+				<h4 class="zero-margin-block" style="color:#969696">Lisa@thewomensdarkroom.com</h4>
+
+
+
+			
+
+			</div>
+                      <div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center padding-right">
+                                <img style="width:300px; height:300px;" src="https://source.unsplash.com/random/">
+   				<h5 class="wide-spacing uppercase">current exhibition</h5>
+				<h6 class="zero-margin-block">Gina Pane -- Traces</h6>
+				<h6 class="zero-margin-block">05.03.19 - 05.25.19</h6>
+                         </div>
+
+			</div>
+		</div>
+	</div>
+<nav  id="home-bottom">
+			<ul class="row align-bottom">
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase third-sm third-xs"><a href="http://wdrg.local/exhibit-1/">+ gallery/exhibitions</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="http://wdrg.local/news/">news</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="http://wdrg.local/shop/">books/ephemera</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="http://wdrg.local/about/">about</a></li>
+			</ul>
+
+</nav>

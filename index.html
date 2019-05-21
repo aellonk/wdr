@@ -1,53 +1,263 @@
-<!doctype html>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+<style>
+@font-face {
+  font-family: 'fonts-3' !important;
+  src: url("https://thewomensdarkroom.com/wp-content/uploads/2019/05/fonts.zip") format("opentype") !important;
+	src: url("https://thewomensdarkroom.com/wp-content/uploads/2019/05/fonts.zip")
+		format("truetype") !important;
+	src: url("DINOT-Medium.otf") format("opentype") !important;
+	src: url("FSSiena-Regular.otf")
+		format("opentype");
+}
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>wdr+g</title>
-  <meta name="description" content="Women's Dark Room + Gallery">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-  <link rel="stylesheet" href="style.css">	
-</head>
+h4, h5, h6 {
+	font-family: 'fonts-3', 'DINOT', 'FSSiena', sans-serif !important;
+	font: 13px/1.65em 'DINOT', sans-serif;
+}
 
-<body>
-<main class="container">
-	<div id="home-top">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 first-sm first-xs">
-				<img src="logo_scrshot.png" class="header">
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 end-md end-lg padding-right">
-				<h1  class="header">the women's darkroom <sup>+gallery</sup></h1>
-			</div>
-		</div>
+.template-page .entry-content-wrapper h2 {
+    text-transform: none;
+}
 
-		<div class="row bottom-md bottom-lg between-md between-lg">
-			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 second-sm second-xs" id="home-about" >
-				<h4>86 Waverly Avenue Brooklyn, NY 11205</h4>
-				<h5>+gallery is on the forth floor of a walkup. If you need assistance to get up to the gallery please email or text me for the freight elevator.</h5>
-				<h4 class="zero-margin-block"><a href="tel:917-721-7094">917-721-7094</a></h4>
-				<h4 class="zero-margin-block">Lisa@thewomensdarkroom.com</h4>
-			</div>
-			<div class="row bottom-md ">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center padding-right">
-				<img style="width:300px; height:300px;" src="https://source.unsplash.com/random/">
-				<h5 class="wide-spacing uppercase">current exhibition</h5>
-				<h6 class="zero-margin-block">Exhibition Name and Information</h6>
-				<h6 class="zero-margin-block">01.02.19 - 02.03.19</h6>
-			</div>
-			</div>
-		</div>
-	</div>
+.container {
+width: 100%;
+}
 
-	<nav id="home-bottom">
+#home-top h4, #home-top h5, #home-top h6 {
+font-size: 14px;
+font-weight: normal;
+} 
+
+.responsive .container {
+max-width: 100%; 
+padding: 0px 0px;
+}
+
+ .word-logo {
+padding-right: 5em;
+}
+
+.align-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ 
+}
+
+.row {
+  margin-left: 0; 
+  margin-right: 0; 
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-block-end: 0;
+}
+
+li.home {
+  text-align: center;
+  position: relative;
+  height: 8em; 
+/*  if changing height, also adjust li.vertical-center margin*/
+}
+
+.col-md-6, .col-lg-4 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid black;
+    border-right: none;
+    border-bottom: none;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li.vertical-center a {
+    display: inline-block;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+}
+
+.home-header {
+  padding-left: 2em;
+}
+
+#home-bottom {
+  height:145px;
+}
+
+sup {
+  font-size: inherit;
+}
+
+.zero-margin-block {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#home-about {
+  margin-left: 2em;
+}
+
+.padding-right {
+  padding-right: 10em;
+}
+
+.padding-left {
+padding-left: 5em;
+}
+
+.wide-spacing {
+  letter-spacing: 4px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+#home-bottom ul li:hover, #home-bottom ul li a:hover  {
+ background-color: #ebebeb;
+ color:white;
+}
+
+.entry-content-wrapper ul {
+    list-style: none;
+}
+
+.entry-content-wrapper li {
+    margin-left: 0em;
+}
+
+#home-bottom ul.row {
+margin-bottom: 0px;
+}
+
+#current-exhibit-img {
+width:450px; 
+height:auto;
+}
+
+
+@media only screen and (max-height: 670px) {
+#current-exhibit-img {
+width:350px; 
+height:auto;
+}
+}
+
+@media only screen and (min-height: 671px) and (max-width: 1200px) {
+#current-exhibit-img {
+width:400px; 
+height:auto;
+}
+}
+
+
+
+
+@media only screen and (max-width: 932px) {
+  .padding-right {
+    padding-right: 0em;
+  }
+
+  #home-about {
+    margin-left: 0em;
+  }
+.padding-left {
+padding-left:0;
+}
+}
+
+@media only screen and (max-width: 412px) {
+ .content {
+   padding-top: 15px;
+ }
+
+  #home-about {
+     margin-top: 1em;
+     margin-bottom: 2em;
+  }
+  
+  #home-top-info {
+  padding-bottom: 20em;
+padding-left: .5rem;
+  padding-right: .5rem;
+  }
+
+.col-md-6, .col-lg-4 {
+    webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.home-header {
+    padding-left: 0;
+}
+
+ .word-logo {
+padding-right: 0;
+ }
+
+.padding-left {
+padding-left: .5rem;
+}
+}
+
+</style>
+	 <div id="home-top">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 first-sm first-xs center-xs start-md start-lg">
+        <img src="https://thewomensdarkroom.com/wp-content/uploads/2019/05/header-3300.png" class="home-header" alt="women's dark room logo">
+       <div class="row between-md between-lg between-sm around-xs bottom-md bottom-lg bottom-sm bottom-xs">
+       <div id="home-about">
+          <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3.5 second-sm second-xs" >
+            <h4 style=" font-size:1.2em">36 Waverly Avenue, 403 Brooklyn, NY 11205</h4>
+          </div>
+          <div class="col-xs-10 col-sm-2 col-md-6 col-lg-6 second-sm second-xs">
+            <h5 style="margin: 1em 0 1em 0">+ gallery is on the fourth floor of a walkup. If you need assistance please email Lisa@thewomensdarkroom.com for the freight elevator.</h5>
+          </div>
+      </div>
+    </div>
+      </div>
+      <div id ="home-top-info">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center padding-left">
+            <a href="https://thewomensdarkroom.com/gallery"><img id="current-exhibit-img" src="https://thewomensdarkroom.com/wp-content/uploads/2019/05/Current_Exhibit_Pane.png" alt="current exhibition image">
+              <h5 class="wide-spacing uppercase" style="color:#595959">current exhibition</h5>
+              <h6 class="zero-margin-block" style="font-style:italic">Gina Pane: Traces</h6>
+              <h6 class="zero-margin-block">05.03.19 - 05.25.19</h6>
+            </a>
+        </div>
+      </div>
+      
+     
+  </div>
+<nav  id="home-bottom">
 			<ul class="row align-bottom">
-					<li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase third-sm third-xs"><a href="#">+ gallery/exhibitions</a></li>
-					<li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="#">news</a></li>
-					<li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="#">books/ephemera</a></li>
-					<li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="#">about</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase third-sm third-xs"><a href="https://thewomensdarkroom.com/gallery/">+ gallery/exhibitions</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="https://thewomensdarkroom.com/news/">news</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="https://thewomensdarkroom.com/books-ephemera/">books/ephemera</a></li>
+					<li class="home col-xs-12 col-sm-12 col-md-6 col-lg-6 vertical-center wide-spacing uppercase"><a href="https://thewomensdarkroom.com/about/">about</a></li>
 			</ul>
-	</nav>
-	
-</main>
-</body>
-</html>
+
+</nav>
